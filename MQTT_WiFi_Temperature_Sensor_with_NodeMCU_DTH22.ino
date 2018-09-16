@@ -12,7 +12,7 @@ static const uint8_t D8   = 15;
 static const uint8_t D9   = 3;
 static const uint8_t D10  = 1;
 */
-
+#include "config.h"
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 #include <Streaming.h>
@@ -26,17 +26,6 @@ static const uint8_t D10  = 1;
 #define R3 2            // Relay 3 D4
 
 #define SLEEP_DELAY_IN_SECONDS  10
-
-//const char* ssid = "Nygaard";
-//const char* password = "julelysbandit";
-const char* ssid = "jodle65salig39masai";
-const char* password = "7ea4f4120e1ee0226282f12639";
-
-//const char* mqtt_server = "m20.cloudmqtt.com";
-const char* mqtt_server = "192.168.87.108";
-const char* mqtt_username = "ust03";
-const char* mqtt_password = "Alfex999";
-const char* mqtt_topic = "/Gasmads/Outdoor/03/json/";
 
 const int AnalogIn  = A0;
 int readingIn = 0;
